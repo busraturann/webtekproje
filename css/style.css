@@ -1,0 +1,77 @@
+.pad0{
+    
+    padding:0px;
+}
+
+.logo-yani-yazisi{
+    
+    float: left !important;
+    font-size: 18px;
+    font-weight: 100;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 50px;
+    margin-top: 6px;
+}
+
+.foto {
+    width: max-content;
+    height: max-content;
+}
+.cv1{
+	position: relative;
+	width:100%;
+	max-width: 1000px;
+	height:500px;
+	border:2px solid;
+	margin: 50px;
+}
+td{
+	height: 30px;
+	text-align:center;
+}
+table tr td{
+	border: 2px solid;
+}
+
+.cv2{
+	position: relative;
+	background:info;
+	width: 100%;
+	max-width: 1000px;
+	height: 200px;
+	margin: 50px;
+	border: 2px solid;
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.text{
+	position: relative;
+	top:50px;
+    left:5px;
+}
+.responsive_image
+{
+   width: 100%;
+   height: auto;
+}
+.slider
+{
+   width: 100%;
+   height: auto;
+}
+.ortayazi
+{
+    margin: 1% 5% 1% 5%;
+    padding: 5% 20% 2% 20%;
+}
+.ortayazi2
+{
+    margin: 1% 5% 1% 5%;
+    padding: 5% 20% 2% 20%;
+}
