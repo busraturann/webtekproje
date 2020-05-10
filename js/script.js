@@ -16,21 +16,30 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
-function iletisimKontrol() {
-    var adsoyad = document.forms["iletisim"]["adsoyad"].value;
-    var mail = document.forms["iletisim"]["mail"].value;
+function FormKontrol() {
+  var ad = document.getElementById("ad").value;
+  var soyad = document.getElementById("soyad").value;
+  var mail = document.getElementById("mail").value;
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-      if (ad == "") {
-        alert("Ad boş bırakılamaz.");
-        return false;
-      }
-      if (soyad == "") {
-        alert("Soyad boş bırakılamaz.");
-        return false;
-      }
-      if (mail == "") {
-        alert("Mail boş bırakılamaz.");
-        return false;
-	  }
+  if (reg.test(mail) == false || mail == "") {
+    alert("Lütfen geçerli bir e-posta adresi giriniz.");
+}
+    else if(mesaj=="")
+    {
+        alert("Lütfen mesajınızı giriniz.");
+    }
+    else if(ad=="")
+    {
+        alert("Lütfen adınızı giriniz.");
+    }       
+    else if(soyad=="")
+    {
+        alert("Lütfen soyadınızı giriniz.");
+    }
+
+    else
+    {
+        document.writeln("Teşekkürler! Mesajınız alınmıştır."+ "<br>" + mail+"<br>"+ad+" "+soyad);
+    }
   }
-
